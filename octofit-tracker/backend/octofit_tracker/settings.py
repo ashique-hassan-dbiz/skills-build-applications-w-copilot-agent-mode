@@ -58,7 +58,7 @@ WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 # MongoDB database config
 DATABASES = {
 	'default': {
-		'ENGINE': 'djongo',
+		'ENGINE': 'django',
 		'NAME': os.environ.get('MONGO_DB_NAME', 'octofitdb'),
 		'ENFORCE_SCHEMA': False,
 		'CLIENT': {
