@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django',
-		'NAME': os.environ.get('MONGO_DB_NAME', 'octofitdb'),
+		'NAME': os.environ.get('MONGO_DB_NAME', 'octofit_db'),
 		'ENFORCE_SCHEMA': False,
 		'CLIENT': {
 			'host': os.environ.get('MONGO_HOST', 'mongodb://localhost:27017'),
